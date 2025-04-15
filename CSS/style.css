@@ -414,11 +414,22 @@ footer p {
 
     /* HEADER */
     .main-nav {
-        font-size: 1rem;
-        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
     }
     .main-nav li {
-        margin: 0 20px;
+        margin: 10px 0;
+    }
+    /* トップビジュアル内のテキストとボタンサイズ調整 */
+    .home-content p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .home-content .button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
     }
 
     /* HOME */
@@ -426,55 +437,50 @@ footer p {
         margin-top: 20%;
     }
 
-    /* NEWS */
-    .news-contents {
+    /* PORTFOLIO */
+    .profile-content {
         flex-direction: column;
+        align-items: center;
     }
-    #news.page-title {
-        margin-top: 30px;
+    .profile-photo {
+        width: 80%;
+        margin-bottom: 20px;
     }
-    article,
-    aside {
-        width: 100%;
+
+    .profile-text {
+        width: 90%;
+    }
+
+    /* 見出しサイズ調整 */
+    .page-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+  .small-title {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    /* 本文の行間と文字サイズを調整 */
+    .profile-text p {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    /* リストの余白調整 */
+    .profile-text ul, 
+    .profile-text ol {
+        padding-left: 20px;
+    }
+
+    .portfolio-list {
+        flex-direction: column;
+        align-items: center;
     }
     
-    aside {
-        margin-top: 60px;
-    }
-    .post-info {
-        margin-bottom: 30px;
-    }
-    .post-date {
-        width: 70px;
-        height: 70px;
-        font-size: 1rem;
-    }
-    .post-date span {
-        font-size: 0.875rem;
-        padding-top: 2px;
-    }
-    .post-title {
-        font-size: 1.375rem;
-    }
-    .post-cat {
-        font-size: 0.875rem;
-        margin-top: 10px;
-    }
-    .post-title,
-    .post-cat {
-        margin-left: 80px;
-    }
-    
-    /* MENU */
-    .menu-content {
-        margin-top: 20%;
-    }
-    .big-box {
-        grid-column: auto;
-        grid-row: auto;
-    }
-    .big-box img {
-        height: auto;
+    .portfolio-item {
+        width: 90%;
     }
 
     /* CONTACT */
@@ -487,21 +493,9 @@ footer p {
     textarea {
         max-width: 100%;
     }
-    /* 店舗情報・地図 / SNS */
-    #location .wrapper,
-    #sns .wrapper {
-        flex-direction: column;
+    /* フッターの文字サイズ調整 */
+    footer p {
+         font-size: 0.75rem;
     }
-    .location-info,
-    .location-map,
-    .sns-box {
-        width: 100%;
-    }
-    .sns-box {
-        margin-bottom: 30px;
-    }
+    
 }
-
-
-
-
